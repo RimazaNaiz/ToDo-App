@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <div class="app-header">
+                <h1><i class="fas fa-check-circle"></i> Elegant Tasks</h1>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            
+            <div class="stat-container">
+                <div class="details">
+                    <h3>Your Progress</h3>
+                    <div id="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="stat-number">
+                    <p id="numbers">0 / 0</p>
+                </div>
+            </div>
+            
+            <form action="" class="input-area">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button class="submit" id="btnAdd"><i class="fa-solid fa-plus"></i></button>
+            </form>
+            
+            <div class="todos-container">
+                <ul id="task-list"></ul>
+                <div class="empty-state">
+                    <img class="empty-image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOC41IDE0LjVMMTIgMTFNMTIgMTVMMTUuNSAxMS41TTIxIDEyQzIxIDE2Ljk3MDYgMTYuOTcwNiAyMSAxMiAyMUM3LjAyOTQ0IDIxIDMgMTYuOTcwNiAzIDEyQzMgNy4wMjk0NCA3LjAyOTQ0IDMgMTIgM0MxNi45NzA2IDMgMjEgNy4wMjk0NCAyMSAxMloiIHN0cm9rZT0iI2E5NmJhOSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="No tasks">
+                    <p>No tasks yet. Add something to do!</p>
+                </div>
+            </div>
+            
+            <div class="app-footer">
+                <p>Click on a task to edit • Drag to reorder</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
